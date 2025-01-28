@@ -62,7 +62,7 @@ static bool _is_cpu_device(struct device *dev)
 }
 
 #ifdef CONFIG_DEBUG_FS
-static struct dentry *rootdir;
+static struct dentry *rootdir;  // rootdirectory is created in debugfs named as energy model an dthat is actually parent directory
 
 struct em_dbg_info {
 	struct em_perf_domain *pd;
